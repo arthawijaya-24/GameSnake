@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Mendekor Body Secara keseluruhan */
+body {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  color: black;
+  margin: 0;
+  padding: 20px;
+
+  /* === Background Gambar === */
+  background-image: 
+    url("../img/image.png"), /* gambar lokal kamu */
+    url("https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1600&q=80"); /* fallback online */
+  background-size: cover;        /* biar nutup seluruh layar */
+  background-position: center;   /* biar gambar tetap di tengah */
+  background-repeat: no-repeat;  /* biar gak berulang */
+  background-attachment: fixed;  /* biar gak ikut scroll */
+}
+
+h1 {
+    color: white;
+    margin-bottom: 10px;
+}
+
+/* Warna untuk teks jika ular menabrak sesuatu */
+#kata {
+    display :none ;
+    color: red;
+}
+
+/* mendekorasi canvas */
+canvas {
+    border: 2px solid rgb(200, 196, 196);
+    box-shadow: 3px 3px 2px;
+
+    /* === Tambahkan background di dalam area game === */
+    background-image: 
+      linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), /* efek gelap transparan */
+      url("https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=800&q=80"); /* rumput hijau */
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+}
+
+/* Mendekorasi Button */
+button {
+    font-size: large;
+    padding: 7px 14px;
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(60, 191, 20);
+    color: white;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+button:hover {
+    background-color: rgb(46, 160, 15);
+    transform: scale(1.05);
+}
+
+.infoscore {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+.infoscore p {
+    margin: 5px;
+}
+
+/* Menjarak Info dari Button dan juga canvas */
+.info {
+    margin: 10px;
+}
+
+p {
+    color: white;
+}
+ 
+#score {
+    color: rgb(4, 209, 4);
+}
